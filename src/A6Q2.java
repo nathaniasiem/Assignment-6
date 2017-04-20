@@ -26,36 +26,41 @@ public class A6Q2 {
         int people = input.nextInt();
 
         //create a list of people's heights
-        int [] height = new int[people];
+        int[] height = new int[people];
 
         //ask user to enter the height
         System.out.println("Enter the height of the people in centimeters.");
-        
+
         //scan in some of the people's height
         //use this to calculate sum of all height
         for (int i = 0; i < height.length; i++) {
-            height[i]=input.nextInt();
+            height[i] = input.nextInt();
         }
-        
+
         //determine the sum of all height
         //use this to calculate the average
         //create an accumulator
         double sum = 0;
         //go through each number
-        for(int i = 0; i<height.length;i++){
+        for (int i = 0; i < height.length; i++) {
             //add each number on the list according to the current sum
-            sum = sum +height[i];           
+            sum = sum + height[i];
         }
         //calculate the average
         //use this to compare to the heights
-        double avg = sum/height.length;
+        double avg = sum / height.length;
         avg = Math.ceil(avg);
-        
+        System.out.println("The average height among the people is " + avg + "cm.");
+
+
+
+        System.out.println(avg);
         //compare the heights to average
         System.out.println("The height(s) that are above average is/are: ");
-        for (int i=0;height[i]>avg;i++){
-            System.out.println(height[i]);  
-        }
-                    
+        for (int i = 0; i < height.length; i++) {
+            if (avg < height[i]) {
+                System.out.println(height[i]+"cm");
+            }
         }
     }
+}
