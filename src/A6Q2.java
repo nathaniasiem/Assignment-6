@@ -51,10 +51,7 @@ public class A6Q2 {
         double avg = sum / height.length;
         avg = Math.ceil(avg);
         System.out.println("The average height among the people is " + avg + "cm.");
-
-
-
-        System.out.println(avg);
+      
         //compare the heights to average
         System.out.println("The height(s) that are above average is/are: ");
         for (int i = 0; i < height.length; i++) {
