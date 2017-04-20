@@ -27,7 +27,9 @@ public class A6Q3 {
         //create list of numbers
         int[] integers= new int[number];
         
-        
+        for(int i=0;i<integers.length;i++){
+            
+        }
 
 
     }
