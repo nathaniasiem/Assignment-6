@@ -29,5 +29,29 @@ public class A6Q4 {
             marks[i] = input.nextInt();
         }
 
+        //sort numbers in ascending order
+        //goes through each number
+        for (int i = 0; i < marks.length - 1; i++) {
+            //compare each value, lowest mark moves up through the sort order
+            for (int j = i + 1; j < marks.length; j++) {
+                //condition if the mark that's in the next index is less than the current mark
+                if (marks[i] > marks[j]) {
+                    //set temporary variable to hold smaller number when switching positions
+                    int temp = marks[j];
+                    marks[j] = marks[i];
+                    marks[i] = temp;
+                }
+            }
+        }
+        //clear space
+        for (int i = 0; i < 10; i++) {
+            System.out.println("\n");
+        }
+        
+        //print out marks in ascending order
+        System.out.println("Your marks in ascending order are: ");
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+        }
     }
 }
