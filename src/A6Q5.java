@@ -60,7 +60,15 @@ public class A6Q5 {
         
         //calculate the median
         //condition for odd or even number of marks
-        if()
+        if(!(marks.length%2==0)){
+            double median=marks[marks.length/2]; 
+            System.out.println("Your median is: "+median);
+        }else{
+            int midNum1=marks[(marks.length/2)+1];
+            int midNum2=marks[(marks.length/2)-1];
+            double median=(midNum1+midNum2)/2;
+            System.out.println("Your median is: " +median);
+    }
         // for Odd, divide the entire array by (number of slots) 
         //for Even, divide by 2, get the number before the middle number and add them both / 2
         // 6 numbers
