@@ -48,31 +48,29 @@ public class A6Q5 {
             }
         }
         //clear space
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println("\n");
         }
-        
+
         //print out marks in ascending order
         System.out.println("Your marks in ascending order are: ");
         for (int i = 0; i < marks.length; i++) {
             System.out.println(marks[i]);
         }
-        
+
         //calculate the median
         //condition for odd or even number of marks
-        if(!(marks.length%2==0)){
-            double median=marks[marks.length/2]; 
-            System.out.println("Your median is: "+median);
-        }else{
-            int midNum1=marks[(marks.length/2)+1];
-            int midNum2=marks[(marks.length/2)-1];
-            double median=(midNum1+midNum2)/2;
-            System.out.println("Your median is: " +median);
-    }
-        // for Odd, divide the entire array by (number of slots) 
-        //for Even, divide by 2, get the number before the middle number and add them both / 2
-        // 6 numbers
-        // 4 , 6 , 2 ,7 ,8, 1
-        //  take 2 and 6, add them and divide by 2.
+        if (!(marks.length % 2 == 0)) {
+            double median = marks[marks.length / 2];
+            System.out.println("Your median is: " + median);
+        } else {
+            //finds first middle number
+            double midNum1 = marks[(marks.length / 2)];
+            //finds second middle number
+            double midNum2 = marks[(marks.length / 2) - 1];
+            //average the middle numbers to get median
+            double median = (midNum1 + midNum2) / 2;
+           System.out.println("Your median is: " + median);
+        }
     }
 }
