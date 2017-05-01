@@ -30,7 +30,12 @@ public class A6Q6 {
         for (int i = 0; i < marks.length; i++) {
             marks[i] = input.nextInt();
         }
-
+        
+        //clear the space
+        for(int i=0;i<marks.length;i++){
+            System.out.println("\n");
+        }
+        
         //find the lowest mark out of the group
         //find the highest mark out of the group
         //set variables to compare marks within array
