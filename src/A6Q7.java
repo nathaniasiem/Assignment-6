@@ -15,7 +15,7 @@ public class A6Q7 {
         Scanner input = new Scanner(System.in);
 
         // ask user to input the maximum number in a set of numbers
-        System.out.println("Enter the maximum numbeer:");
+        System.out.println("Enter the maximum number:");
         int n = input.nextInt();
 
         // create a list of numbers to determine prime numbers
